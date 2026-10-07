@@ -1,0 +1,50 @@
+baseURL = "https://cczy9498.github.io/"
+title = "Chris Chen"
+theme = "hugo-theme-stack"
+locale = "zh-Hant-TW"
+defaultContentLanguage = "zh-hant-tw"
+hasCJKLanguage = true
+timeZone = "Asia/Taipei"
+enableRobotsTXT = true
+[pagination]
+pagerSize = 5
+[permalinks]
+post = "/p/:slug/"
+page = "/:slug/"
+[params]
+mainSections = ["post"]
+rssFullContent = true
+[params.sidebar]
+subtitle = "寫程式，也記錄生活。"
+emoji = "☕"
+[params.footer]
+since = 2026
+[params.article]
+toc = true
+readingTime = true
+[params.comments]
+enabled = false
+[params.colorScheme]
+toggle = true
+default = "auto"
+[params.widgets]
+homepage = [{type = "search"}, {type = "archives", params = {limit = 5}}, {type = "categories", params = {limit = 10}}, {type = "tag-cloud", params = {limit = 10}}]
+page = [{type = "toc"}]
+[[menus.main]]
+name = "首頁"
+url = "/"
+weight = 1
+[menus.main.params]
+icon = "home"
+[[menus.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/cczy9498"
+[menus.social.params]
+icon = "brand-github"
+[markup.highlight]
+noClasses = false
+lineNos = true
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 4
